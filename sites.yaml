@@ -1,3 +1,6 @@
 - name: gitops
   base: /gitops
   version: "4.2"
+- name: container-platform
+  base: /container-platform
+  version: "4.2"
