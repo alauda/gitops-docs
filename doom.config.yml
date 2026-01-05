@@ -19,7 +19,4 @@ releaseNotes:
     gitOps_fixed_issues_4.2.0: |
       project in (ACP) AND fixVersion in (argocd-v4.2.0) AND status not in (Cancelled, 已取消, 已拒绝) AND assignee not in membersOf(test) AND issuetype not in (task, story, job) AND (resolution not in ("By Design", "Not a Bug", Duplicate, Rejected, "Cannot Reproduce") OR resolution is EMPTY) AND ("Epic Link" not in (ASM-20440) OR "Epic Link" is EMPTY) AND issuetype = Bug AND ReleaseNotesStatus = Publish
     gitOps_fixed_unissues_4.2.0: ''
-
-  JIRA_USERNAME: wwdu@alauda.io
-  JIRA_PASSWORD: jingoal89
       
