@@ -1,5 +1,5 @@
 {
-  "packageManager": "yarn@4.9.4",
+  "packageManager": "yarn@4.12.0",
   "scripts": {
     "dev": "doom dev",
     "build": "doom build",
@@ -9,7 +9,7 @@
     "translate": "doom translate"
   },
   "devDependencies": {
-    "@alauda/doom": "^1.12.7",
+    "@alauda/doom": "^1.17.6",
     "simple-git-hooks": "^2.13.1"
   },
   "simple-git-hooks": {
