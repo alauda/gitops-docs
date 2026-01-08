@@ -1393,53 +1393,6 @@
      }
     }
    }
-  },
-  "/gitops/v1/project/{project}/unifiedapps": {
-   "get": {
-    "consumes": [
-     "application/json"
-    ],
-    "produces": [
-     "application/json"
-    ],
-    "summary": "List application and applicationsets in a project",
-    "operationId": "func2",
-    "parameters": [
-     {
-      "type": "string",
-      "description": "Given Bearer token will use this as authorization for the API",
-      "name": "Authorization",
-      "in": "header"
-     },
-     {
-      "type": "string",
-      "description": "project name",
-      "name": "project",
-      "in": "path",
-      "required": true
-     },
-     {
-      "type": "string",
-      "description": "list filter",
-      "name": "filter",
-      "in": "query"
-     },
-     {
-      "type": "string",
-      "description": "app type",
-      "name": "type",
-      "in": "query"
-     }
-    ],
-    "responses": {
-     "200": {
-      "description": "success",
-      "schema": {
-       "$ref": "#/definitions/unstructured.UnstructuredList"
-      }
-     }
-    }
-   }
   }
  },
  "definitions": {
