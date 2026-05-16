@@ -1,0 +1,28 @@
+# llms.txt generator configuration for alauda/gitops-docs
+project_name: "Alauda GitOps Documentation"
+summary: "Documentation for Alauda GitOps, a platform-managed Argo CD distribution with operator-based lifecycle and integrated UI workflows."
+
+include_patterns:
+  - "**/*.md"
+  - "**/*.mdx"
+
+exclude_patterns:
+  - "**/node_modules/**"
+  - "**/.git/**"
+  - "**/.yarn/**"
+  - "**/dist/**"
+  - "**/build/**"
+  - "**/.builds/**"
+  - "**/llms.txt"
+  - "**/llmstxt-state.json"
+  - "**/CHANGELOG.md"
+  - "**/CONTRIBUTING.md"
+
+# Group sections starting from the repo root
+grouping_base_path: "."
+
+# Files per batch for AI processing
+batch_size: 15
+
+# Maximum words per generated file description
+description_max_words: 150
