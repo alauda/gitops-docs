@@ -13,11 +13,11 @@ i18n:
 Helm is a package management tool for Kubernetes, enabling users to define, install, and upgrade complex Kubernetes applications. A **Helm Chart** is a templated configuration package containing Kubernetes resource definitions (YAML files).
 
 ## Core Concepts of Helm
-- **Chart**: A Helm Chart is a templated configuration package containing Kubernetes resource definitions (YAML files).  
-- **Release**: A Helm Release is an instance of a deployed Helm Chart, representing a specific configuration of Kubernetes resources.  
-- **Values**: Helm Values are parameterized configurations for a Helm Chart, allowing users to customize Kubernetes resource definitions.  
+- **Chart**: A Helm Chart is a templated configuration package containing Kubernetes resource definitions (YAML files).
+- **Release**: A Helm Release is an instance of a deployed Helm Chart, representing a specific configuration of Kubernetes resources.
+- **Values**: Helm Values are parameterized configurations for a Helm Chart, allowing users to customize Kubernetes resource definitions.
 
-Argo CD's integration with Helm enhances GitOps practices by enabling declarative continuous delivery through web console, Argo CD dashboard, or CLI. Example:  
+Argo CD's integration with Helm enhances GitOps practices by enabling declarative continuous delivery through web console, Argo CD dashboard, or CLI. Example:
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
@@ -78,6 +78,6 @@ When multiple value sources are provided, the priority order is: `parameters` > 
 
 - **Application Distribution**: Enables packaging Charts for distribution to Helm repositories or OCI registries.
 
-# References
+## References
 
 For more detailed information, please refer to: [Helm](https://argo-cd.readthedocs.io/en/stable/user-guide/helm/)
