@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "generator_version": 3,
+  "project_name": "Alauda GitOps Documentation",
+  "summary": "Documentation for Alauda GitOps, a platform-managed Argo CD distribution with operator-based lifecycle and integrated UI workflows.",
+  "generated_at": "2026-05-16T04:51:25Z",
+  "include_patterns": [
+    "**/*.md",
+    "**/*.mdx"
+  ],
+  "exclude_patterns": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.yarn/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/.builds/**",
+    "**/llms.txt",
+    "**/llmstxt-state.json",
+    "**/CHANGELOG.md",
+    "**/CONTRIBUTING.md",
+    ".llmstxt-cache/**",
+    "**/.llmstxt-cache/**",
+    "llms.txt",
+    "llmstxt-state.json"
+  ],
+  "grouping_base_path": ".",
+  "description_max_words": 150,
+  "files": {
+    "README.md": {
+      "sha256": "f0c8d80339ee2a735d64288297156ad36ace501ae73f23d9f501e08b024195e5",
+      "size": 809,
+      "description": "Contributor setup notes for the docs site itself: install Node.js/npm, run `yarn install`, and recommends VS Code with the MDX extension for authoring. Lists the three local commands `yarn dev` (live-reloading dev server, with a note that left-nav changes require a restart), `yarn build` (produces static output in `dist`), and `yarn serve` (preview the built site).",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/advanced_apis/gitops/applications.mdx": {
+      "sha256": "d1edf73a452af080a914de4cedb78dcd248c98212ecb5ea4457198913f482b41",
+      "size": 359,
+      "description": "OpenAPI reference for the GitOps Application HTTP endpoints under `/gitops/v1/project/{project}/applications`, including list, get-by-name, events, refresh, and sync operations. Rendered from the OpenAPI spec via the `<OpenAPIPath>` component so users can drive Argo CD Application lifecycle actions through the platform's project-scoped REST API.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/advanced_apis/gitops/applicationsets.mdx": {
+      "sha256": "f077f2c8776a08c4b0847e1da9788aab9c8f6cbe07c73b6cde912fbe39f4fa63",
+      "size": 850,
+      "description": "OpenAPI reference for the ApplicationSet endpoints under `/gitops/v1/project/{project}/applicationsets`, covering list/get/delete of ApplicationSets plus nested routes for their generated applications, per-application sync, events, refresh, sync, topology, and PrometheusRule management. Rendered from the OpenAPI spec via `<OpenAPIPath>` for project-scoped ApplicationSet operations.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/advanced_apis/gitops/core.mdx": {
+      "sha256": "04b9642a82d1f3a7b00fae8c995de8d2d900b2495bed82dae99cd148bb8af648",
+      "size": 185,
+      "description": "OpenAPI reference for the GitOps core endpoints: the GraphQL endpoint `/gitops/v1/gql` and the repository helpers `/gitops/v1/project/{project}/repository/apps` and `/repository/refs`, used to discover applications and Git refs available in a connected source repository.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/advanced_apis/gitops/index.mdx": {
+      "sha256": "7a096621ca31a40215b837850f48d2cf1149bd39dc7528141aece565be86dfd2",
+      "size": 49,
+      "description": "Landing page for the GitOps Advanced API section, rendering an `<Overview>` directory listing of the nested core, applications, and applicationsets API references.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/advanced_apis/index.mdx": {
+      "sha256": "46e105da8ad6e4801e03b4cd909fb1fc3ba0616c8c26e44401a276d45a7f8d99",
+      "size": 71,
+      "description": "Top-level landing page for the Advanced APIs category that uses the `<Overview>` component to enumerate domain-specific advanced API groupings (e.g., the GitOps subgroup).",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/apis/index.mdx": {
+      "sha256": "1265809ce45f521955633f14aebed06f945f03477c9be6acf0bd247dc41e6f8f",
+      "size": 207,
+      "description": "Root index page of the API Reference section, titled \"API Reference\" via i18n front matter, that renders an `<Overview>` table of contents linking into Advanced APIs and other API groupings exposed by Alauda GitOps.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/argocd_troubleshooting.mdx": {
+      "sha256": "dbcb9d486eb24503cfb73f591d427be5930165d6d1c09afbf0ad1bb7a41fe2a8",
+      "size": 8725,
+      "description": "FAQ-style troubleshooting guide for common Argo CD operational issues: deleting apps whose repo is missing (`--cascade=false`), persistent `OutOfSync` and `Progressing` states (Ingress / StatefulSet / SealedSecret quirks), disabling the admin user via `argocd-cm`, air-gapped Helm chart dependencies, why `helm ls` doesn't see Argo-managed apps, cluster-secret labeling, Kustomize `instance` label collisions, polling interval tuning, oversized JWT cookies, the `--grpc-web` CLI workaround, and rotating Redis keys plus restarting `argocd-server`, `argocd-repo-server`, and `argocd-application-controller`.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/alauda_gitops_concept_info/alauda_gitops_concept_argocd.mdx": {
+      "sha256": "eff7a3643c5ef811c36ea430e8a4dce17dc351265cfbc79c65dfcacf294651b7",
+      "size": 4493,
+      "description": "Introduces Alauda Container Platform GitOps as a Kubernetes-native GitOps distribution built on Argo CD that watches Git for manifests (Application, ApplicationSet) and reconciles them to clusters. Highlights why Argo CD was chosen (declarative engine, multi-source Helm/Kustomize/YAML, multi-cluster control plane, CNCF ecosystem) and Alauda's value-adds: enterprise Argo CD Operator support, visual multi-environment distribution, visual ops with live Workload logs/events, visual cluster-config management, and closed-loop integration with platform DevOps, CrossPlane, MySQL, and the Developer Portal.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/alauda_gitops_concept_info/alauda_gitops_concept_argocd_status.mdx": {
+      "sha256": "58f25602ddd7c4d74818480156f27a204693f08af5bd3306aa2c6b5576d17092",
+      "size": 4255,
+      "description": "Defines how Alauda GitOps aggregates resource state into Application and ApplicationSet status. Documents the four sync states (`Sync Failed`, `OutOfSync`, `Syncing`, `Synced`) and six health states (`Unknown`, `Missing`, `Degraded`, `Paused`, `Progressing`, `Healthy`), each with priority rules for roll-up, and lists the \"Healthy\" recognition criteria for Deployment, StatefulSet, ReplicaSet, DaemonSet, Ingress, Service, PVC, Pod, Job, and HPA resources.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/alauda_gitops_concept_info/index.mdx": {
+      "sha256": "f5d760fa5901f05034619ff6328919fac47c33b9255586254ae08acfbbb31e30",
+      "size": 197,
+      "description": "Section landing page for Alauda Container Platform GitOps Concepts, rendering an `<Overview>` of the introduction and sync/health-status pages beneath it.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_application.mdx": {
+      "sha256": "ab7fe6ebd2ff18d6096c472bf3f8541c1647c3e646a4b80b9f3fb541a7ddb148",
+      "size": 5319,
+      "description": "Explains the Argo CD `Application` CRD (`argoproj.io/v1alpha1`) as a declarative grouping of Kubernetes resources for single-component, statically configured, single-cluster deployments. Includes an exhaustive YAML example covering `source` variants (Helm parameters/valueFiles/valuesObject/version, Kustomize patches/images/replicas/components, raw directory with Jsonnet extVars/tlas, CMP plugin parameters), multi-source `sources`, `destination`, `syncPolicy` with automated prune/selfHeal and sync options (`Validate=false`, `CreateNamespace=true`, `PrunePropagationPolicy`, `PruneLast`, `RespectIgnoreDifferences`, `ApplyOutOfSyncOnly`), retry backoff, `ignoreDifferences` via jsonPointers / jqPathExpressions / managedFieldsManagers, and `revisionHistoryLimit`.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_applicationset.mdx": {
+      "sha256": "ba5f748446e0ea2ff1247fbeaab7f5482e0ae56ed8991c0d437ac2b466c4eb17",
+      "size": 2304,
+      "description": "Describes the Argo CD ApplicationSet controller and CRD for templating many Applications from a single spec, with use cases for fan-out deployment of similar microservices, multi-cluster rollout with per-cluster parameters, and dynamic Application generation from Git branches/tags. Includes a list-generator YAML example using `goTemplate: true` to expand `{{.cluster}}` and `{{.url}}` into per-cluster Applications targeting `engineering-dev`, `engineering-prod`, and `finance-preprod`.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_health.mdx": {
+      "sha256": "1919623cd2e2f798a3d715154a04e3deda96a0160746b01677094f21136cb169",
+      "size": 1023,
+      "description": "Concept summary of Argo CD's resource health model, listing the four states `Health`, `Progressing`, `Degraded`, and `Suspended` (e.g., paused Deployment or suspended CronJob) and noting that built-in checks for standard Kubernetes types bubble up to the overall Application health, with a pointer to Argo CD's custom health-check extensibility.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_sync.mdx": {
+      "sha256": "fa3ae0d3c18315bb635d006f285341d2f0e88c66e32567fe4ec08a756437c0d5",
+      "size": 2043,
+      "description": "Conceptual overview of Argo CD's Sync engine, contrasting Desired State (Git) with Live State (cluster) and explaining how reconciliation is driven manually, by webhook/commit/tag events, or on a poll. Defines the application Sync Status values (`Synced`, `OutOfSync`, `Syncing`) and Sync Operation Status values (`Succeeded`, `Failed`, `Running`), plus the Refresh operation that re-fetches Git and re-diffs against the cluster.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_tool.mdx": {
+      "sha256": "ee77ae43cf6e2972f27e054e0fbb4a40d31e80d27bfae686517e72feb161fe09",
+      "size": 2010,
+      "description": "Introduces Argo CD's Tool concept for generating Kubernetes manifests, covering the four supported approaches (Kustomize, Helm, Directory of YAML/JSON/Jsonnet files, and custom Config Management Plugins) and the `argocd app sync APPNAME --local` workflow for uploading local manifests during development. Includes a feature-comparison matrix scoring Helm, Kustomize, and Directory on templating method, reusability, multi-environment support, progressive delivery, learning curve, and typical use cases.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_tool_directory.mdx": {
+      "sha256": "0ad6182a46426618be30f2d8f6907c1ea10980a7a1216bcc6187e315c5e04188",
+      "size": 1608,
+      "description": "Describes Argo CD's Directory source type, which loads plain `.yml`, `.yaml`, or `.json` manifests from a repo path without requiring `spec.source.directory` configuration. Provides a declarative `argoproj.io/v1alpha1 Application` example pointing at the argocd-example-apps guestbook directory, explains advantages (simplicity, low maintenance) for small-scale GitOps adoption, and warns that Argo CD will fail to render the path if it detects Kustomize, Helm, or Jsonnet files.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_tool_helm.mdx": {
+      "sha256": "44192597181085d924a8f0a0139258847dbf77f510bcce8feafe0556edf3ee8f",
+      "size": 2853,
+      "description": "Explains Argo CD's Helm integration, defining the core Chart, Release, and Values concepts and showing declarative `Application` manifests for both a standard HTTPS chart repo (sealed-secrets from bitnami-labs) and an OCI registry (nginx chart). Notes that the Application's lifecycle is managed by Argo CD rather than Helm, documents the value-source priority order (`parameters` > `valuesObject` > `values` > `valueFiles` > repo `values.yaml`), and covers Helm's gotpl templating, packaging, dependency, and install/upgrade/rollback lifecycle features.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/concept_argocd_tool_kustomize.mdx": {
+      "sha256": "2ebff81a3d02ba820205710fbcd01f5ae6f4c4d70d82d66b0f2e91aff6c898d7",
+      "size": 2977,
+      "description": "Covers Argo CD's Kustomize integration via Base, Overlay, and `kustomization.yaml` composition, including a declarative `Application` example sourcing the kubernetes-sigs/kustomize `examples/helloWorld` path. Enumerates supported configuration options such as `namePrefix`, `nameSuffix`, `images`, `replicas`, `commonLabels`, `labelWithoutSelector`, `forceCommonLabels`, `commonAnnotations`, `namespace`, `commonAnnotationsEnvsubst`, `patches`, and `components`, and highlights its template-free, kubectl-native approach for multi-environment distribution and progressive delivery.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/gitops_concept_argocd.mdx": {
+      "sha256": "2b86a03028c0b1327a26a9ef43d7476a0703650b9dd74be95da2c66c132d05cf",
+      "size": 2651,
+      "description": "Argo CD primer that frames the five core concepts to learn first: Application (CRD grouping Kubernetes resources), ApplicationSet (controller templating bulk Applications), Tool (Kustomize/Helm config management), Sync (reconciling live state to desired state), and Health. Includes a side-by-side Application vs ApplicationSet comparison across definition, configuration, deployment scope, use cases, and core concepts, plus a table defining the Synced, OutOfSync, and Syncing status values.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/argocd_concept_info/index.mdx": {
+      "sha256": "a01d0ca312a40a00317df5948215c3c5d1b248ec53e2984f6a9427865bd461d8",
+      "size": 120,
+      "description": "Section landing page for Argo CD core concepts that renders an `<Overview />` index of the child topics — Application, ApplicationSet, Tool (Kustomize/Helm/Directory), Sync, Health, and the Argo CD introduction.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/gitops_concept_infro.mdx": {
+      "sha256": "6efb06649b3d756c0ffd29c41927d6b1b43539bfd280f353c5622169b0c8df3f",
+      "size": 2493,
+      "description": "Introduces GitOps as the practice of using Git as the authoritative source for infrastructure and application config, and lays out its four core principles: declarative configuration, versioned and immutable state (rollbacks via `git revert`), automated reconciliation, and controller-driven self-healing. Also enumerates benefits (collaboration, rapid rollback, multi-environment governance, security/compliance via Git RBAC, audit logs, and branch protections) and surveys popular tools — Argo CD, Flux, and Jenkins X.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/concept/index.mdx": {
+      "sha256": "bb4816f914af295ee1ad41ed589a416f5fe56342f65b0c0f3fb092f326fd2935",
+      "size": 98,
+      "description": "Landing page for the Concepts section that embeds an `<Overview />` component to surface the GitOps Introduction and the Argo CD Concept subsection (Application, ApplicationSet, Tool, Sync, Health).",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/argocd_observability/argocd_operator_observability.mdx": {
+      "sha256": "650f1e7c893926683fa16b90bcc5cde3a91b78e03e28cc5ecbd5dd060b3f30b6",
+      "size": 1335,
+      "description": "Walks operators through monitoring Argo CD components from the web console: logging in as Administrator, selecting the `global` cluster, then navigating Operations Center > Monitoring > Monitoring Dashboard, clicking Switch to choose the `container-platform` source, and opening the ArgoCD dashboard to view resource and operational state metrics. Lists installing Alauda Container Platform GitOps and the Monitoring plugin as prerequisites.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/argocd_observability/gitops_application_alert.mdx": {
+      "sha256": "93c61f1339be49b21b2573cd94e2ce30f13f2d1f273e0b4027b65d9517a24919",
+      "size": 3123,
+      "description": "Day-2 operations guide for GitOps Applications in the web console, covering creation of alert rules under the Alerts tab — including the `gitops.applicationset.healthy` metric (0 = Unknown/Lost/Degraded/Paused, 1 = Syncing, 2 = Healthy) and `gitops.applicationset.synced` metric (0 = Sync Failed/Pending, 1 = Syncing, 2 = Synced). Also shows how to inspect workload logs from Kubernetes Resources and aggregated events from the Events tab without requiring the Log cluster plugin.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/argocd_observability/index.mdx": {
+      "sha256": "0ada50ce577067fd194fece178400db4e6aee0db93b01ad3e7df43705dcf058a",
+      "size": 128,
+      "description": "Landing page for the GitOps Observability function section, embedding `<Overview />` to surface the Argo CD Component Monitoring and GitOps Applications Ops (alerts, logs, events) child topics.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/create_argocd_application/create_application_via_platform.mdx": {
+      "sha256": "b4f0e912b2f7843d23abdf054159fb3fa39834bf406f89a8562f047f0c387371",
+      "size": 8344,
+      "description": "Step-by-step procedure for creating an Argo CD Application via Alauda Container Platform GitOps, with three creation paths: the Container Platform > GitOps Applications visual form (configuring Type, Source — Platform integrated vs ArgoCD integrated GitLab/GitHub/Bitbucket/Gitee/Gitea, Version Identifiers of Branch/Tag/Commit, Source File Type of Kustomize/Helm/Directory, Destination, and Sync Policy with 3-minute reconciliation), a raw `argoproj.io/v1alpha1 Application` YAML tab (with `automated.prune`, `selfHeal`, and `CreateNamespace=true`), and `kubectl apply -f application.yaml` via the web-cli plugin. Also explains the sync-ignore template UI and the resulting `ignoreDifferences` block.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/create_argocd_application/create_applicationset_via_platform.mdx": {
+      "sha256": "65ba09ed8f7d1c3d522f14e6ba2371af2420cc5d25ee39c490a5009caa22bae7",
+      "size": 9495,
+      "description": "Procedure for creating an Argo CD ApplicationSet through the Alauda Container Platform GitOps web console for cross-cluster/cross-namespace deployments with differentiated configuration. Covers the same Basic Info, Code Repository, Destination, and Sync Policy parameters as the Application flow, then documents lifecycle management actions in the GitOps Application list — Update (overwrites all child instances), Manually Sync, Delete (cascade-removes children), Automatic Sync (3-minute reconciliation), Source navigation back to the parent, and Application Distribution via `Applications > Add Distribution`.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/create_argocd_application/index.mdx": {
+      "sha256": "97d511f33b6064991aba3a413d9b0a93f898e0fcd76e69457d63a743805a686a",
+      "size": 144,
+      "description": "Section index for Creating GitOps Application that uses `<Overview />` to list the Application and ApplicationSet creation procedures.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/functions/index.mdx": {
+      "sha256": "a53bbe91c022ce75942743ba51aa063daa58f74f729f4427fb06aa57e3404708",
+      "size": 79,
+      "description": "Top-level landing page for the Guides (functions) section, rendering an `<Overview />` of the available task-oriented guides such as creating GitOps Applications/ApplicationSets and GitOps observability.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/how_to/argocd_git.mdx": {
+      "sha256": "b4ac9eb72a55bc7598567f175e4ecf14b1de657868827c815476bce4bae9e0ec",
+      "size": 2132,
+      "description": "Walks Administrators through connecting Git source repositories through the native Argo CD dashboard: opening Settings, using the REPO card's CONNECT REPO action with credentials, and then attaching the repository URL to a Project's SOURCE REPOSITORIES so it surfaces in the web console's GitOps Applications create flow. Assumes the Alauda Container Platform GitOps plugin is installed with the Native Argo CD UI switch enabled.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/how_to/argocd_info.mdx": {
+      "sha256": "5d5ce214277cfe4711df3e2fb1f02f245d002e0f052c8fdc42b670434244be13",
+      "size": 4481,
+      "description": "Explains how to obtain Argo CD dashboard access information for both deployment paths: the Alauda Container Platform GitOps cluster plugin (via the Marketplace cluster-plugins details page, optionally with Single Sign-On) and the Alauda Build of Argo CD Operator (by exposing the argocd-gitops-server Service as NodePort against a control-plane node IP). Also documents retrieving and patching the default admin password through `kubectl` against the `argocd-gitops-cluster` secret.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/how_to/create_application_by_argocd_dashoard.mdx": {
+      "sha256": "679b7df7b1cc4f2a207e59519e67d1025bade58eee960ba24002ec0576c16c80",
+      "size": 2083,
+      "description": "Step-by-step guide to creating an Argo CD Application from the native Argo CD dashboard using the +NEW APP button, including the guestbook example: setting the application name, default project, Manual sync policy, the `argocd-example-apps` repository URL with HEAD revision and `guestbook` path, and an in-cluster destination at `https://kubernetes.default.svc` in the `default` namespace.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/how_to/create_gitops_app.mdx": {
+      "sha256": "764a3205f7b80d45180d12f39f2fe8d6b4be6f5df69ad1e5842b294af33e4acd",
+      "size": 2361,
+      "description": "Tutorial for creating an Argo CD Application via the web console's GitOps Applications entry, walking through Code Repository integration, Basic Info and Code Repository parameters (Type=Application, Source=Argo CD Integration, integrated project `argocd-example-apps`, master branch, Helm source type with `helm-guestbook` directory and `values.yaml`), platform-recommended namespace selection, and Manually Sync policy to deploy a SpringBoot demo.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/how_to/index.mdx": {
+      "sha256": "05d7a56878b7bb96307c4d7576661b85d1327727f3a235124f1600d62c651cf8",
+      "size": 87,
+      "description": "Section landing page for the How To guides, rendered via the `<Overview />` component to enumerate task-oriented topics such as Argo CD dashboard repository integration, obtaining access information, and creating Applications through both the native Argo CD UI and the platform's GitOps Applications console.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/index.mdx": {
+      "sha256": "99212b18fdd8843098e4b07308e50bbef6c0ed96acd5785d4419ab9cf785fc3e",
+      "size": 121,
+      "description": "Top-level navigation entry for the English documentation set, using the `<Overview />` component with empty headers to act as the root index that links to Overview, Install, Concepts, How To, and other Alauda Container Platform GitOps sections.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/install_gitops/index.mdx": {
+      "sha256": "278833728963130f2ca1c7d403a2ac1b83461eb576f58c1ffdca7910ec916ed4",
+      "size": 90,
+      "description": "Landing page for the Install section, rendered with the `<Overview />` component to surface the installation paths: deploying the Alauda Container Platform GitOps cluster plugin on the `global` cluster and installing/upgrading the standalone Alauda Build of Argo CD Operator.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/install_gitops/install_argocd_operator.mdx": {
+      "sha256": "f949be1ca3451edcec91b82c7bcec3b5162fba5cefc084bde254a66c66c2a843",
+      "size": 3245,
+      "description": "Installation procedure for the Alauda Build of Argo CD Operator: uploading the architecture-matched package, installing the Operator from OperatorHub on the alpha channel in Cluster install mode with auto upgrades, creating an Argo CD instance (toggling `ha.enabled=false` when the global cluster lacks HA), and optionally creating a `cpaas-system` AppProject (with wildcard cluster resources, destinations, and source repos) to unlock platform-managed Cluster Configuration Management.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/install_gitops/install_gitops_plugin.mdx": {
+      "sha256": "3e71ba74b9714d1ecb4baea756cf99597049dcadb800d1ef7e8ac8103614ab2a",
+      "size": 4104,
+      "description": "Procedure for installing the Alauda Container Platform GitOps cluster plugin onto the `global` cluster from the Marketplace Cluster Plugins page, documenting each parameter (Native Argo CD UI toggle, HTTPS-only OIDC Single Sign-On, dynamically generated Access Address, account/password, and minimum/recommended resource quotas), the constraint that it restricts operations on argocd-operator's ArgoCD instance, and verification steps confirming the Cluster Config and GitOps Applications entries appear.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/install_gitops/upgrade_argocd_operator.mdx": {
+      "sha256": "4de40372cac1a5d1f5fe9b2834da07fed973d337451a20540c8ec65c7f340692",
+      "size": 1472,
+      "description": "Upgrade procedure for the Alauda Build of Argo CD Operator: uploading the new package, using the Operator page's Cross-Cluster Sync to push the new Sync Version to the target cluster's argocd-operator, then waiting for auto-upgrade through OperatorHub. Includes a warning that upgrading from versions earlier than v4.2.0 moves Argo CD from v2.x to v3.x with breaking changes per the upstream Argo CD 2.14-3.0 upgrade notes.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/overview/architecture.mdx": {
+      "sha256": "c1c5c8e4ac17c5da1887abc00dda5caedc0b7a1c782daa9d429aec11ffbe897d",
+      "size": 1785,
+      "description": "Architectural overview explaining how GitOps treats Git as the single source of truth and how Argo CD reconciles cluster state against repository configuration to prevent drift. Describes Alauda Container Platform GitOps as a cluster plugin deployed on the `global` cluster that uses Argo CD to distribute applications and infrastructure to multiple business Kubernetes clusters, supported by accompanying architecture diagrams.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/overview/index.mdx": {
+      "sha256": "332630cfdc11a5b386b43aee66b60885d1641fed76e4abe701597db5ad241815",
+      "size": 94,
+      "description": "Section landing page for the Overview area, rendered through the `<Overview />` component to link the Introduction, Architecture, Lifecycle Policy, and Release Notes pages that orient new users to Alauda Container Platform GitOps.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/overview/intro.mdx": {
+      "sha256": "632b444ad370dc9b63fb087a2c74b38918278f062022ee85842b1e9aa0621b50",
+      "size": 3833,
+      "description": "Introduces GitOps as a continuous delivery paradigm with Git as the single source of truth and outlines representative use cases (containerized application delivery on Kubernetes, multi-environment management, microservices operations, IaC integration with Terraform/Ansible, cross-team collaboration). Lists Alauda Container Platform GitOps's differentiators including an enterprise-grade Argo CD Operator, Operator safety service, visual multi-environment distribution, visual Ops and cluster configuration management, and closed-loop integration with platform products.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/overview/lifecycle_policy.mdx": {
+      "sha256": "cc9d7508e3ce2d1dfa5c4ca0746435f451fedda4b28bc4445074a85644344d4b",
+      "size": 370,
+      "description": "Version lifecycle policy for Alauda Container Platform GitOps, presenting a release-date and end-of-life table; currently lists v4.2.0 with a 2025 release date and a 2027 end-of-life placeholder.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/overview/release_notes.mdx": {
+      "sha256": "de2955574e227a5ec36d88ad408bccb993194b1deb04b8f13f3d69da3a310b81",
+      "size": 886,
+      "description": "Release notes for Alauda Container Platform GitOps, presenting a supported-versions table that aligns v4.2.0 with the corresponding `<Term name=\"product\"/>` and Alauda Build of ArgoCD v4.2 releases, and summarizing v4.2.0 highlights: upgrade of Argo CD to v3 and independently releasable cadence decoupled from the core product.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/upgrade/index.mdx": {
+      "sha256": "8c251016b7eaa6e6efa43fc3e90e73410b63ad9774b3fded9eb78d3e8f6ea327",
+      "size": 90,
+      "description": "Section landing page for the Upgrade chapter of the Alauda Container Platform GitOps documentation; renders an <Overview /> component that links to the underlying upgrade procedures.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    },
+    "docs/en/upgrade/upgrade_gitops_plugin.mdx": {
+      "sha256": "97aa60d8d3a2ee88b31282e2970e0bd6ee0bd1d142934d930208d1b48960c17c",
+      "size": 2393,
+      "description": "Step-by-step procedure for upgrading the Alauda Container Platform GitOps cluster plugin on the `global` cluster, covering prerequisites (downloading the architecture-specific package, uploading via Platform Management > Marketplace > Upload Packages, and installing through the cluster plugins mechanism) and the upgrade flow via Clusters > global > Functional Components > Upgrade. Includes a post-upgrade step required only when upgrading from ACP 3.16.0 — running `kubectl delete cm -n argocd argocd-redis-ha-configmap` and verifying recreation with `kubectl get cm` — plus verification that the Config entry and GitOps Applications navigation entries appear after the upgrade.",
+      "generation_method": "ai_agent_reading",
+      "updated_at": "2026-05-16T04:51:25Z"
+    }
+  }
+}
