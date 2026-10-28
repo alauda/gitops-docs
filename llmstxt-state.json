@@ -287,11 +287,11 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/install_gitops/install_argocd_operator.mdx": {
-      "sha256": "f949be1ca3451edcec91b82c7bcec3b5162fba5cefc084bde254a66c66c2a843",
-      "size": 3245,
-      "description": "Installation procedure for the Alauda Build of Argo CD Operator: uploading the architecture-matched package, installing the Operator from OperatorHub on the alpha channel in Cluster install mode with auto upgrades, creating an Argo CD instance (toggling `ha.enabled=false` when the global cluster lacks HA), and optionally creating a `cpaas-system` AppProject (with wildcard cluster resources, destinations, and source repos) to unlock platform-managed Cluster Configuration Management.",
+      "sha256": "2cd472be2aa9c5c0ce2172df2fcc1be16937ccdf7f82f86a3f8917ec7c6b53db",
+      "size": 4026,
+      "description": "Installation procedure for the Alauda Container Platform GitOps Controller Operator (previously Alauda Build of Argo CD): uploading the architecture-matched package, installing the Operator from OperatorHub on the alpha channel in Cluster install mode with auto upgrades, creating an Argo CD instance (toggling `ha.enabled=false` when the global cluster lacks HA), and optionally creating a `cpaas-system` AppProject (with wildcard cluster resources, destinations, and source repos) to unlock platform-managed Cluster Configuration Management.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-10-27T17:11:26Z"
     },
     "docs/en/install_gitops/install_gitops_plugin.mdx": {
       "sha256": "3e71ba74b9714d1ecb4baea756cf99597049dcadb800d1ef7e8ac8103614ab2a",
@@ -301,11 +301,11 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/install_gitops/upgrade_argocd_operator.mdx": {
-      "sha256": "4de40372cac1a5d1f5fe9b2834da07fed973d337451a20540c8ec65c7f340692",
-      "size": 1472,
-      "description": "Upgrade procedure for the Alauda Build of Argo CD Operator: uploading the new package, using the Operator page's Cross-Cluster Sync to push the new Sync Version to the target cluster's argocd-operator, then waiting for auto-upgrade through OperatorHub. Includes a warning that upgrading from versions earlier than v4.2.0 moves Argo CD from v2.x to v3.x with breaking changes per the upstream Argo CD 2.14-3.0 upgrade notes.",
+      "sha256": "6221cdfc90b36053143f589895a5dc32a03a652ef142edbcf4e5925ada90a616",
+      "size": 1533,
+      "description": "Upgrade procedure for the Alauda Container Platform GitOps Controller Operator (previously Alauda Build of Argo CD): uploading the new package, using the Operator page's Cross-Cluster Sync to push the new Sync Version to the target cluster's argocd-operator, then waiting for auto-upgrade through OperatorHub. Includes a warning that upgrading from versions earlier than v4.2.0 moves Argo CD from v2.x to v3.x with breaking changes per the upstream Argo CD 2.14-3.0 upgrade notes.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-10-27T17:11:26Z"
     },
     "docs/en/overview/architecture.mdx": {
       "sha256": "c1c5c8e4ac17c5da1887abc00dda5caedc0b7a1c782daa9d429aec11ffbe897d",
