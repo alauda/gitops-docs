@@ -196,11 +196,11 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/functions/argocd_observability/gitops_application_alert.mdx": {
-      "sha256": "93c61f1339be49b21b2573cd94e2ce30f13f2d1f273e0b4027b65d9517a24919",
-      "size": 3123,
-      "description": "Day-2 operations guide for GitOps Applications in the web console, covering creation of alert rules under the Alerts tab — including the `gitops.applicationset.healthy` metric (0 = Unknown/Lost/Degraded/Paused, 1 = Syncing, 2 = Healthy) and `gitops.applicationset.synced` metric (0 = Sync Failed/Pending, 1 = Syncing, 2 = Synced). Also shows how to inspect workload logs from Kubernetes Resources and aggregated events from the Events tab without requiring the Log cluster plugin.",
+      "sha256": "7fa2a85dc5b174d58af27f1cf3ccc6263f178822d8917ceddfe49b0a152e8c08",
+      "size": 3131,
+      "description": "Day-2 operations guide for GitOps Applications in the web console, covering creation of alert rules under the Alerts tab — including the `gitops.applicationset.healthy` metric (0 = Unknown/Lost/Degraded/Paused, 1 = Syncing, 2 = Healthy) and `gitops.applicationset.synced` metric (0 = Sync Failed/Pending, 1 = Syncing, 2 = Synced). Also shows how to inspect workload logs from Kubernetes Resources and aggregated events from the Events tab without requiring the Log Cluster Plugin.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/functions/argocd_observability/index.mdx": {
       "sha256": "0ada50ce577067fd194fece178400db4e6aee0db93b01ad3e7df43705dcf058a",
@@ -238,25 +238,25 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/how_to/argocd_git.mdx": {
-      "sha256": "b4ac9eb72a55bc7598567f175e4ecf14b1de657868827c815476bce4bae9e0ec",
+      "sha256": "902fa2f4c0e8b9174b68a77975f98ea17131f3ff128967272717332cf03f2841",
       "size": 2132,
-      "description": "Walks Administrators through connecting Git source repositories through the native Argo CD dashboard: opening Settings, using the REPO card's CONNECT REPO action with credentials, and then attaching the repository URL to a Project's SOURCE REPOSITORIES so it surfaces in the web console's GitOps Applications create flow. Assumes the Alauda Container Platform GitOps plugin is installed with the Native Argo CD UI switch enabled.",
+      "description": "Walks Administrators through connecting Git source repositories through the native Argo CD dashboard: opening Settings, using the REPO card's CONNECT REPO action with credentials, and then attaching the repository URL to a Project's SOURCE REPOSITORIES so it surfaces in the web console's GitOps Applications create flow. Assumes the Alauda Container Platform GitOps Cluster Plugin is installed with the Native Argo CD UI switch enabled.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/how_to/argocd_info.mdx": {
-      "sha256": "5d5ce214277cfe4711df3e2fb1f02f245d002e0f052c8fdc42b670434244be13",
-      "size": 4481,
-      "description": "Explains how to obtain Argo CD dashboard access information for both deployment paths: the Alauda Container Platform GitOps cluster plugin (via the Marketplace cluster-plugins details page, optionally with Single Sign-On) and the Alauda Build of Argo CD Operator (by exposing the argocd-gitops-server Service as NodePort against a control-plane node IP). Also documents retrieving and patching the default admin password through `kubectl` against the `argocd-gitops-cluster` secret.",
+      "sha256": "cbfd8998618e42ccf2c12f6345c215b1ed64f5963521b952f65871a2c08e69ff",
+      "size": 4509,
+      "description": "Explains how to obtain Argo CD dashboard access information for both deployment paths: the Alauda Container Platform GitOps Cluster Plugin (via the Marketplace cluster-plugins details page, optionally with Single Sign-On) and the Alauda Build of Argo CD Operator (by exposing the argocd-gitops-server Service as NodePort against a control-plane node IP). Also documents retrieving and patching the default admin password through `kubectl` against the `argocd-gitops-cluster` secret.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/how_to/create_application_by_argocd_dashoard.mdx": {
-      "sha256": "679b7df7b1cc4f2a207e59519e67d1025bade58eee960ba24002ec0576c16c80",
-      "size": 2083,
+      "sha256": "22e550ddaa4e30874fc299d4342acc0e03df3e64947e6513d3c69430a0b7d33a",
+      "size": 2098,
       "description": "Step-by-step guide to creating an Argo CD Application from the native Argo CD dashboard using the +NEW APP button, including the guestbook example: setting the application name, default project, Manual sync policy, the `argocd-example-apps` repository URL with HEAD revision and `guestbook` path, and an in-cluster destination at `https://kubernetes.default.svc` in the `default` namespace.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/how_to/create_gitops_app.mdx": {
       "sha256": "764a3205f7b80d45180d12f39f2fe8d6b4be6f5df69ad1e5842b294af33e4acd",
@@ -287,18 +287,18 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/install_gitops/install_argocd_operator.mdx": {
-      "sha256": "2cd472be2aa9c5c0ce2172df2fcc1be16937ccdf7f82f86a3f8917ec7c6b53db",
-      "size": 4026,
-      "description": "Installation procedure for the Alauda Container Platform GitOps Controller Operator (previously Alauda Build of Argo CD): uploading the architecture-matched package, installing the Operator from OperatorHub on the alpha channel in Cluster install mode with auto upgrades, creating an Argo CD instance (toggling `ha.enabled=false` when the global cluster lacks HA), and optionally creating a `cpaas-system` AppProject (with wildcard cluster resources, destinations, and source repos) to unlock platform-managed Cluster Configuration Management.",
+      "sha256": "6a7ec5e8837c95d6aa2fdea244868f8f590a8a82599099e1fb74635c7ea7a9ff",
+      "size": 4039,
+      "description": "Installation procedure for the Alauda Container Platform GitOps Controller Operator (previously Alauda Build of Argo CD): uploading the architecture-matched package, installing the Operator from OperatorHub on the alpha channel in Cluster install mode with auto upgrades, creating an Argo CD instance (toggling `ha.enabled=false` when the `global` cluster lacks HA), and optionally creating a `cpaas-system` AppProject (with wildcard cluster resources, destinations, and source repos) to unlock platform-managed Cluster Configuration Management.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-10-27T17:11:26Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/install_gitops/install_gitops_plugin.mdx": {
-      "sha256": "3e71ba74b9714d1ecb4baea756cf99597049dcadb800d1ef7e8ac8103614ab2a",
-      "size": 4104,
-      "description": "Procedure for installing the Alauda Container Platform GitOps cluster plugin onto the `global` cluster from the Marketplace Cluster Plugins page, documenting each parameter (Native Argo CD UI toggle, HTTPS-only OIDC Single Sign-On, dynamically generated Access Address, account/password, and minimum/recommended resource quotas), the constraint that it restricts operations on argocd-operator's ArgoCD instance, and verification steps confirming the Cluster Config and GitOps Applications entries appear.",
+      "sha256": "2328b422423ecf5e8e8c89a4f8d471378a1302cac085ef62617ec27a4fddb8bf",
+      "size": 4109,
+      "description": "Procedure for installing the Alauda Container Platform GitOps Cluster Plugin onto the `global` cluster from the Marketplace Cluster Plugins page, documenting each parameter (Native Argo CD UI toggle, HTTPS-only OIDC Single Sign-On, dynamically generated Access Address, account/password, and minimum/recommended resource quotas), the constraint that it restricts operations on argocd-operator's ArgoCD instance, and verification steps confirming the Cluster Config and GitOps Applications entries appear.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/install_gitops/upgrade_argocd_operator.mdx": {
       "sha256": "6221cdfc90b36053143f589895a5dc32a03a652ef142edbcf4e5925ada90a616",
@@ -308,11 +308,11 @@
       "updated_at": "2026-10-27T17:11:26Z"
     },
     "docs/en/overview/architecture.mdx": {
-      "sha256": "c1c5c8e4ac17c5da1887abc00dda5caedc0b7a1c782daa9d429aec11ffbe897d",
+      "sha256": "b1a0d5839b221a1c5c0571b4d48fce8ea12852970b377f4608ba20020138e6a9",
       "size": 1785,
-      "description": "Architectural overview explaining how GitOps treats Git as the single source of truth and how Argo CD reconciles cluster state against repository configuration to prevent drift. Describes Alauda Container Platform GitOps as a cluster plugin deployed on the `global` cluster that uses Argo CD to distribute applications and infrastructure to multiple business Kubernetes clusters, supported by accompanying architecture diagrams.",
+      "description": "Architectural overview explaining how GitOps treats Git as the single source of truth and how Argo CD reconciles cluster state against repository configuration to prevent drift. Describes Alauda Container Platform GitOps as a Cluster Plugin deployed on the `global` cluster that uses Argo CD to distribute applications and infrastructure to multiple workload clusters, supported by accompanying architecture diagrams.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     },
     "docs/en/overview/index.mdx": {
       "sha256": "332630cfdc11a5b386b43aee66b60885d1641fed76e4abe701597db5ad241815",
@@ -350,11 +350,11 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/upgrade/upgrade_gitops_plugin.mdx": {
-      "sha256": "97aa60d8d3a2ee88b31282e2970e0bd6ee0bd1d142934d930208d1b48960c17c",
-      "size": 2393,
-      "description": "Step-by-step procedure for upgrading the Alauda Container Platform GitOps cluster plugin on the `global` cluster, covering prerequisites (downloading the architecture-specific package, uploading via Platform Management > Marketplace > Upload Packages, and installing through the cluster plugins mechanism) and the upgrade flow via Clusters > global > Functional Components > Upgrade. Includes a post-upgrade step required only when upgrading from ACP 3.16.0 — running `kubectl delete cm -n argocd argocd-redis-ha-configmap` and verifying recreation with `kubectl get cm` — plus verification that the Config entry and GitOps Applications navigation entries appear after the upgrade.",
+      "sha256": "b1ddbcc1feb873d7caae0c733d18b3ef8e04a5aae10ba52b12174e79b8d65974",
+      "size": 2361,
+      "description": "Step-by-step procedure for upgrading the Alauda Container Platform GitOps Cluster Plugin on the `global` cluster, covering prerequisites (downloading the architecture-specific package, uploading via Platform Management > Marketplace > Upload Packages, and installing it as a Cluster Plugin) and the upgrade flow via Clusters > global > Functional Components > Upgrade. Includes a post-upgrade step required only when upgrading from ACP 3.16.0 — running `kubectl delete cm -n argocd argocd-redis-ha-configmap` and verifying recreation with `kubectl get cm` — plus verification that the Config entry and GitOps Applications navigation entries appear after the upgrade.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-23T19:58:38Z"
     }
   }
 }
