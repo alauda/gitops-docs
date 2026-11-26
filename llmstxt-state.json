@@ -84,11 +84,11 @@
       "updated_at": "2026-05-16T04:51:25Z"
     },
     "docs/en/concept/alauda_gitops_concept_info/alauda_gitops_concept_argocd.mdx": {
-      "sha256": "eff7a3643c5ef811c36ea430e8a4dce17dc351265cfbc79c65dfcacf294651b7",
-      "size": 4493,
+      "sha256": "3d9ea22b7ef4b5f3903263f5e24d500540259ed0c1b431cb68367aa6ef945a90",
+      "size": 4484,
       "description": "Introduces Alauda Container Platform GitOps as a Kubernetes-native GitOps distribution built on Argo CD that watches Git for manifests (Application, ApplicationSet) and reconciles them to clusters. Highlights why Argo CD was chosen (declarative engine, multi-source Helm/Kustomize/YAML, multi-cluster control plane, CNCF ecosystem) and Alauda's value-adds: enterprise Argo CD Operator support, visual multi-environment distribution, visual ops with live Workload logs/events, visual cluster-config management, and closed-loop integration with platform DevOps, CrossPlane, MySQL, and the Developer Portal.",
       "generation_method": "ai_agent_reading",
-      "updated_at": "2026-05-16T04:51:25Z"
+      "updated_at": "2026-11-26T17:54:18Z"
     },
     "docs/en/concept/alauda_gitops_concept_info/alauda_gitops_concept_argocd_status.mdx": {
       "sha256": "58f25602ddd7c4d74818480156f27a204693f08af5bd3306aa2c6b5576d17092",
